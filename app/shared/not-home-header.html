@@ -1,0 +1,67 @@
+<?php
+$now = time();
+define ("__IMG_DIR__", "/assets/images");
+define ("__CSS_DIR__", "/assets/css");
+define ("__JS_DIR__", "/assets/js");
+define ("__FONT_DIR__", "/assets/fonts");
+
+switch($first_url) {
+    case "solution":
+        $bold_solution = 'bolder';
+        break;
+	case "company":
+		$bold_solution = 'bolder';
+		break;
+}	
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>useB</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://useb.co.kr/">
+		<meta property="og:image" content="https://useb.co.kr<?=__IMG_DIR__?>/thumbnail.jpeg">
+		<meta property="og:description" content="비대면 본인인증 토탈 간편 솔루션">
+		<meta property="og:site_name" content="useB.">
+		<meta property="og:locale" content="ko_KR">
+
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="expires" content="0">
+		<meta http-equiv="pragma" content="no-cache">
+
+		<link rel="icon" type="image/x-icon" href="<?=__IMG_DIR__?>/favicon.ico?v=<?=$now?>" />
+		<link rel="preload" href="<?=__FONT_DIR__?>/NanumSquareB.woff" as="font" crossorigin="anonymous">
+		<link rel="preload" href="<?=__FONT_DIR__?>/NanumSquareEB.woff" as="font" crossorigin="anonymous">
+		<link rel="preload" href="<?=__FONT_DIR__?>/NanumSquareR.woff" as="font" crossorigin="anonymous">
+
+		<title>useB.</title>
+		<meta name='description' content='비대면 본인인증 토탈 간편 솔루션' />
+
+		<link rel='stylesheet' href='<?=__CSS_DIR__?>/bootstrap.min.css?v=<?=$now?>'>
+		<link rel='stylesheet' href='<?=__CSS_DIR__?>/bootstrap-grid.min.css?v=<?=$now?>'>
+		<link rel='stylesheet' href='<?=__CSS_DIR__?>/font-awesome.min.css'>
+		<link rel='stylesheet' href='<?=__CSS_DIR__?>/owl.carousel.min.css'>
+		<link rel='stylesheet' href='<?=__CSS_DIR__?>/animate.css?v=<?=$now?>'>
+		<link rel='stylesheet' href='<?=__CSS_DIR__?>/custom_style.css?v=<?=$now?>'>
+		<link rel='stylesheet' href='<?=__CSS_DIR__?>/responsive.css?v=<?=$now?>'>
+		<link rel='stylesheet' href='<?=__CSS_DIR__?>/responsive-mobile.css?v=<?=$now?>'>
+		<link rel='stylesheet' href='<?=__CSS_DIR__?>/experience.css?v=<?=$now?>'>
+		<link rel='stylesheet' href='<?=__CSS_DIR__?>/experience-mobile.css?v=<?=$now?>'>
+		
+		<script type='text/javascript' src='<?=__JS_DIR__?>/jquery-3.4.1.min.js?v=<?=$now?>'></script>
+		<script type='text/javascript' src='<?=__JS_DIR__?>/owl.carousel.min.js?v=<?=$now?>'></script>
+		<script type='text/javascript' src='<?=__JS_DIR__?>/popper.js?v=<?=$now?>'></script>
+		<script type='text/javascript' src='<?=__JS_DIR__?>/wow.js?v=<?=$now?>'></script>
+		<script type='text/javascript' src='<?=__JS_DIR__?>/custom.js?v=<?=$now?>'></script>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<script src="https://kit.fontawesome.com/98295f07cb.js" crossorigin="anonymous"></script>
+	</head>
+	<body class="">
+		
+	<?php
+	include "header.html";
+	?>

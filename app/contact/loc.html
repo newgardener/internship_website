@@ -1,0 +1,88 @@
+<?php
+include './app/shared/not-home-header.html';
+?>
+    <section class="banner inner_banner solution_idcard_ocr">
+        <div class="banner_image">
+            <img src="<?=__IMG_DIR__?>/sub_bn_06.png" alt="">
+            <img src="<?=__IMG_DIR__?>/test-mobile.png" alt="">
+        </div>
+        <div class="container py-lg-2">
+            <div class="row">
+                <div class="col-lg-7 col-xl-5 text-center text-lg-left pt-0 pb-5 pt-md-5">
+                    <div class="banner_content wow fadeInDown">
+                        <h1>Contact</h1>
+                    </div>
+                    <div class="w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map_view">
+        <div class="container wow fadeInUpBig">
+            <div class="info_container">
+                <h4>찾아오시는 길</h4>
+                <p>서울시 마포구 마포대로 78, 8F 815호</p>
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td>contact@useb.co.kr</td>
+                    </tr>
+                    <tr>
+                        <td>TEL</td>
+                        <td>070-4849-1000</td>
+                    </tr>
+                    <tr>
+                        <td>FAX</td>
+                        <td>070-7966-1609</td>
+                    </tr>
+                </table>
+    
+            </div>
+            <div class="map_container" id="map"></div>
+            <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgv6dfncJgj4Whq0UuVJpf6Wet7XAUv1o&callback=initMap&libraries=&v=weekly"
+            async></script>
+        </div>
+    </section>
+
+    <section class="experience full_button">
+        <div class="container py-5">
+            <div class="w-100 text-center">
+                <a href="/contact/inquiry" class="bttn large">문의하기</a>
+            </div>
+        </div>
+    </section> 
+</body>
+<script>
+    function initMap() {
+        // map centered at useB
+        const map = new google.maps.Map(document.getElementById("map"), {
+            center: new google.maps.LatLng(37.54187, 126.94976),
+            zoom: 18,
+        });
+        // marker positioned at useB
+        const marker_content = '<h4>useB</h4>';
+        const infowindow = new google.maps.InfoWindow({
+            content: marker_content,
+        });
+        const markerIcon = {
+            url: "<?=__IMG_DIR__?>/icon_map.png",
+            scaledSize: new google.maps.Size(60, 60),
+        };
+        const marker = new google.maps.Marker({
+            position: new google.maps.LatLng(37.54187, 126.94976),
+            icon: markerIcon,
+            map: map,
+            title: "useB",
+        });
+        marker.addListener("click", () => {
+            infowindow.open(map, marker);
+        });
+    }
+</script>
+
+<?php
+include './app/shared/footer.html';
+?>

@@ -1,0 +1,82 @@
+<?php
+include './app/shared/not-home-header.html';
+?>
+
+<section class="banner inner_banner solution_idcard_ocr">
+  <div class="banner_image">
+    <img src="<?=__IMG_DIR__?>/sub_bn_06.png" alt="" />
+    <img src="<?=__IMG_DIR__?>/test-mobile.png" alt="" />
+  </div>
+  <div class="container py-lg-2">
+    <div class="row">
+      <div class="col-lg-7 col-xl-5 text-center text-lg-left">
+        <div class="banner_content wow fadeInDown">
+          <h1>
+            유스비의 기술을<br />
+            체험해보세요
+          </h1>
+          <div class="w-100"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="exp_gray_bg text-center">
+  <div class="container">
+    <div class="exp-menu">
+      <a href="/experience/ocr" class="exp-submenu" id="exp-ocr-tab">신분증OCR+진위여부</a>
+      <a href="/experience/ocrdoc" class="exp-submenu" id="exp-ocrdoc-tab">문서OCR</a>
+      <a href="/experience/1won" class="exp-submenu" id="exp-1won-tab">1원계좌인증</a>
+      <a href="/experience/face" class="exp-submenu blue-bg" id="exp-face-tab">안면인식</a>
+      <a href="/experience/realpass" class="exp-submenu" id="exp-realpass-tab">리얼패스</a>
+    </div>
+    <div class="exp-content-view">
+      <div class="content__face" id="step1">
+        <div class="page-center" id="face">
+          <a class="page page-on"></a>
+          <a class="page"></a>
+        </div>
+        <div class="title-face">얼굴 이미지 업로드</div>
+        <div class="descript-face">얼굴 유사도 분석을 하기 위한 이미지를 각각 업로드해주세요.</div>
+        <div class="face__container">
+          <div class="face-left">
+            <input type="file" id="hidden-left-input" class="image-input" accept="image/*"
+             onchange="readInputFile('left', event)" onclick="this.value=null;">
+            <button class="faceopen-btn left">이미지 업로드</button>
+          </div>
+          <div class="face-right">
+            <input type="file" id="hidden-right-input" class="image-input" accept="image/*"
+             onchange="readInputFile('right', event)" onclick="this.value=null;">
+            <button class="faceopen-btn right">이미지 업로드</button>
+          </div>
+        </div>
+        <div class="btn__container">
+          <button class="btn btn1">다음</button>
+        </div>
+      </div>
+      <div class="content__face d-none" id="step2">
+        <div class="page-center" id="face">
+          <a class="page"></a>
+          <a class="page page-on"></a>
+        </div>
+        <div class="title-face">유사도 분석 결과</div>
+        <div class="descript-face">두 얼굴의 유사도는 <span class="face-result">100%</span> 입니다.</div>
+        <div class="face__container">
+          <div class="face-left">
+          </div>
+          <div class="face-right">
+          </div>
+        </div>
+        <div class="btn__container">
+          <button class="btn btn2">다시하기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+<script src="<?=__JS_DIR__?>/exp-face.js?v=<?=$now?>"></script>
+<?php
+include './app/shared/footer.html';
+?>

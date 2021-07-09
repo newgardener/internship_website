@@ -1,0 +1,112 @@
+<?php
+$now = time();
+define ("__IMG_DIR__", "/assets/images");
+define ("__CSS_DIR__", "/assets/css");
+define ("__JS_DIR__", "/assets/js");
+
+switch($first_url) {
+    case "solution":
+        $bold_solution = 'bolder';
+        break;
+	case "company":
+		$bold_solution = 'bolder';
+		break;
+}
+?>
+
+<header id="masthead" class="site-header" role="banner">
+  <!-- POPUP notification bar -->
+
+  <!-- <div class="pop_up_msg">
+    <div class="container">
+      <p>Popup notification will be shown here</p>
+      <span class="popup_close"></span>
+    </div>
+  </div> -->
+  
+  <div class="container">
+    <div class="site-header-main">
+      <div class="site-branding">
+        <a href="/" class="custom-logo-link"><img src="<?=__IMG_DIR__?>/logo.png" class="custom-logo"/></a>
+      </div>
+      <div class="overlay"></div>
+      <div id="site-header-menu" class="site-header-menu">
+        <div class="site-branding">
+          <a href="/" class="custom-logo-link"><img src="<?=__IMG_DIR__?>/logo.png" class="custom-logo"/></a>
+        </div>
+        <nav id="site-navigation" class="main-navigation">
+          <div class="menu-main-menu-container">
+            <ul id="menu-main-menu" class="primary-menu">
+              <li class="current-menu-item">
+                <a href="#">솔루션</a>
+                <div class="dropdown_menu">
+                  <div class="dropdown_wrapper">
+                    <div class="container">
+                      <ul>
+                        <li><a href="/solution/ocr">신분증 OCR</a></li>
+                        <li><a href="/solution/ocrdoc">문서 OCR</a></li>
+                        <li><a href="/solution/1won">1원계좌인증</a></li>
+                        <li><a href="/solution/face">안면인증</a></li>
+                        <li><a href="/solution/realpass">리얼패스</a></li>
+                        <li><a href="/solution/aml">자금세탁방지 컨설팅</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="">
+                <a href="#">체험하기</a>
+                <div class="dropdown_menu">
+                  <div class="dropdown_wrapper">
+                    <div class="container">
+                      <ul>
+                        <li><a href="/experience/ocr">신분증 OCR</a></li>
+                        <li><a href="/experience/ocrdoc">문서 OCR</a></li>
+                        <li><a href="/experience/1won">1원계좌인증</a></li>
+                        <li><a href="/experience/face">안면인증</a></li>
+                        <li><a href="/experience/realpass">리얼패스</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="">
+                <a href="#">회사소개</a>
+                <div class="dropdown_menu">
+                  <div class="dropdown_wrapper">
+                    <div class="container">
+                      <ul>
+                        <li><a href="/company/intro">회사개요</a></li>
+                        <li><a href="/company/recruit">인재채용</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="">
+                <a href="#">Contact</a>
+                <div class="dropdown_menu">
+                  <div class="dropdown_wrapper">
+                    <div class="container">
+                      <ul>
+                        <li>
+                          <a href="/contact/loc">연락처/오시는 길</a>
+                        </li>
+                        <li><a href="/contact/inquiry">문의 남기기</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="header_right">
+          <a href="javascript:void(0);">KOR</a>
+          <a href="javascript:void(0);" class="active">ENG</a>
+        </div>
+      </div>
+      <button type="button" class="menu-toggle"><span>menu</span></button>
+    </div>
+  </div>
+</header>
