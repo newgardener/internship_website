@@ -1,7 +1,9 @@
 <?php
 include './app/shared/not-home-header.html';
+include './assets/php/php-lib.php';
 $now = time();
 $isCookieSet = isset($_COOKIE['newusebocr']);
+Console_log($isCookieSet);
 ?>
 
 <section class="banner inner_banner solution_idcard_ocr">
@@ -467,7 +469,6 @@ $isCookieSet = isset($_COOKIE['newusebocr']);
 </section>
 </body>
 <script src="<?=__JS_DIR__?>/exp-ocrdoc.js?v=<?=$now?>"></script>
-<script src="//code.jquery.com/jquery.min.js"></script>
 <script type="text/javascript">
   let isCookieSet ='<?=$isCookieSet?>';
   if (isCookieSet) {
@@ -524,6 +525,8 @@ $isCookieSet = isset($_COOKIE['newusebocr']);
       url: '../../assets/php/exp-ocrdoc-consent.php',
       data: new FormData(this),
       dataType: 'json',
+      contentType: false,
+      processData: false,
       beforeSend: function(request) {
         if (!validateForm()) {
           request.abort();
