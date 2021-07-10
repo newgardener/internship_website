@@ -1,0 +1,86 @@
+<?php
+include './app/shared/not-home-header.html';
+?>
+
+<section class="banner inner_banner solution_idcard_ocr">
+  <div class="banner_image">
+    <img src="<?=__IMG_DIR__?>/sub_bn_06.png" alt="" />
+    <img src="<?=__IMG_DIR__?>/test-mobile.png" alt="" />
+  </div>
+  <div class="container py-lg-2">
+    <div class="row">
+      <div class="col-lg-7 col-xl-5 text-center text-lg-left">
+        <div class="banner_content wow fadeInDown">
+          <h1>
+            유스비의 기술을<br />
+            체험해보세요
+          </h1>
+          <div class="w-100"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="exp_gray_bg text-center">
+    <div class="container">
+      <div class="exp-menu">
+        <a href="/experience/ocr" class="exp-submenu" id="exp-ocr-tab">신분증OCR+진위여부</a>
+        <a href="/experience/ocrdoc" class="exp-submenu" id="exp-ocrdoc-tab">문서OCR</a>
+        <a href="/experience/1won" class="exp-submenu" id="exp-1won-tab">1원계좌인증</a>
+        <a href="/experience/face" class="exp-submenu" id="exp-face-tab">안면인식</a>
+        <a href="/experience/realpass" class="exp-submenu blue-bg" id="exp-realpass-tab">리얼패스</a>
+      </div>
+      <div class="exp-content-view">
+        <div class="content-descript">
+          <p>
+            쉽고 빠른 3단계 프로세스로<br/>
+            신분증 위변조 검사 끝!<br/>
+          </p>
+          <p>            
+            신분증을 준비하신 후,<br class="not_mobile"/>
+            카메라가 설치된<br class="on_mobile"/> 컴퓨터 또는 모바일에서 체험해보세요.
+          </p>
+        </div>
+        <div class="on_mobile gray-box-title">
+          진위여부 확인이 가능한 신분증 종류
+        </div>
+        <div class="exp-gray-wrapper">
+          <div class="exp-gray-box">
+            <div class="exp-gray-img">
+              <img src="<?=__IMG_DIR__?>/id_card_001.png" alt="">
+              <p class="small">주민등록증</p>
+            </div>
+            <div class="exp-gray-img">
+              <img src="<?=__IMG_DIR__?>/id_card_002.png" alt="">
+              <p class="small">운전면허증</p>
+            </div>
+            <div class="exp-gray-img">
+              <img src="<?=__IMG_DIR__?>/id_card_003.png" alt="">
+              <p class="small">여권</p>
+            </div>
+            <div class="exp-gray-img">
+              <img src="<?=__IMG_DIR__?>/id_card_004.png" alt="">
+              <p class="small">외국인등록증</p>
+            </div>
+          </div>
+          <div class="not_mobile gray-box-title">
+            <p><span id="bold">진위여부 확인이 가능한 신분증 종류</span></p>
+          </div>
+        </div>
+        <div class="exp-button-wrapper">
+          <div class="container py-5">
+            <div class="w-100 text-center">
+              <a href="https://realpass.kr/chae" target="_blank" rel="noopener noreferrer" class="bttn large">데모 체험하기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+</body>
+
+<?php
+include './app/shared/footer.html';
+?>

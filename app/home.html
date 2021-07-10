@@ -1,0 +1,413 @@
+<?php
+include './app/shared/home-header.html';
+?>
+    <section class="banner home_banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-xl-5 pt-5 text-center text-lg-left">
+                    <div class="banner_content wow fadeInDown">
+                        <h1>비대면 본인인증<br/>토탈 간편 솔루션</h1>
+                        <h4>
+                            Web, App 어디서든<br/>
+                            API만 연결하면 빠르게<br/>
+                            비대면 본인인증 도입<br/>
+                        </h4>
+                        <div class="w-100">
+                            <a class="bttn white round" id="service-btn" onclick="clickServiceBtn();">서비스소개서 다운로드</a>
+                            <a href="/experience" class="bttn outline transparent round">체험하기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8 offset-1 col-md-8 offset-md-1 col-lg-5 offset-lg-5 col-xl-7 offset-xl-4">
+                    <div class="mobiles">
+                        <span><img src="<?=__IMG_DIR__?>/mobile_01.png" alt="">
+                            <span><img src="<?=__IMG_DIR__?>/mobile_02.png" alt=""></span>
+                            <span><img src="<?=__IMG_DIR__?>/mobile_03.png" alt=""></span>
+                            <span><img src="<?=__IMG_DIR__?>/mobile_04.png" alt=""></span>
+                        </span>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row feature_block_wrapper">
+                <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-0 pb-4 pb-md-5">
+                    <div class="row features">
+                        <div class="col-4 col-md-4 d-flex child_selector">
+                            <div class="feature_block">
+                                <div class="feature_block_inner">
+                                    <h4>신분증 OCR</h4>
+                                    <div class="icons"><img src="<?=__IMG_DIR__?>/icon_01.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-4 d-flex child_selector">
+                            <div class="feature_block">
+                                <div class="feature_block_inner">
+                                    <h4>1원 계좌 인증</h4>
+                                    <div class="icons"><img src="<?=__IMG_DIR__?>/icon_02.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-4 d-flex child_selector">
+                            <div class="feature_block">
+                                <div class="feature_block_inner">
+                                    <h4>안면 인증</h4>
+                                    <div class="icons"><img src="<?=__IMG_DIR__?>/icon_03.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="face_identification wow fadeInUp">
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-10 offset-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3 text-center">
+                    <div class="section_heading wow fadeIn">
+                        <h3 id="main">
+                            비대면 본인인증이<br/> 필요한 곳이라면 어디든!
+                        </h3>
+                        <p id="main">
+                            유스비는 정확한 비대면 본인인증이<br class="on_mobile"/> 필요한 곳이라면<br/>
+                            어디든 쉽게 바로 적용할 수 있는<br class="on_mobile"/> 솔루션을 제공합니다.<br/>
+                            다양한 분야에서 유스비와 함께하세요!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters text-center pb-4 pb-xl-5 face_identification_item_wrapper wow fadeInUpBig">
+                <div class="col-3 col-md-3 col-lg-3 col-xl d-flex">
+                    <div class="face_identification_items">
+                        <div class="icon"><img src="<?=__IMG_DIR__?>/icon_s_01.png" alt=""></div>
+                        <h4>핀테크</h4>
+                    </div>
+                </div>
+                <div class="col-3 col-md-3 col-lg-3 col-xl d-flex">
+                    <div class="face_identification_items">
+                        <div class="icon"><img src="<?=__IMG_DIR__?>/icon_s_02.png" alt=""></div>
+                        <h4>배달주문앱</h4>
+                    </div>
+                </div>
+                <div class="col-3 col-md-3 col-lg-3 col-xl d-flex">
+                    <div class="face_identification_items">
+                        <div class="icon"><img src="<?=__IMG_DIR__?>/icon_s_03.png" alt=""></div>
+                        <h4>편의점</h4>
+                    </div>
+                </div>
+                <div class="col-3 col-md-3 col-lg-3 col-xl d-flex">
+                    <div class="face_identification_items">
+                        <div class="icon"><img src="<?=__IMG_DIR__?>/icon_s_04.png" alt=""></div>
+                        <h4>주점</h4>
+                    </div>
+                </div>
+                <div class="col-3 col-md-3 col-lg-3 col-xl d-flex">
+                    <div class="face_identification_items">
+                        <div class="icon"><img src="<?=__IMG_DIR__?>/icon_s_05.png" alt=""></div>
+                        <h4>카쉐어링</h4>
+                    </div>
+                </div>
+                <div class="col-3 col-md-3 col-lg-3 col-xl d-flex">
+                    <div class="face_identification_items">
+                        <div class="icon"><img src="<?=__IMG_DIR__?>/icon_s_06.png" alt=""></div>
+                        <h4>성인용품점</h4>
+                    </div>
+                </div>
+                <div class="col-3 col-md-3 col-lg-3 col-xl d-flex">
+                    <div class="face_identification_items">
+                        <div class="icon"><img src="<?=__IMG_DIR__?>/icon_s_07.png" alt=""></div>
+                        <h4>P2P중고거래</h4>
+                    </div>
+                </div>
+                <div class="col-3 col-md-3 col-lg-3 col-xl d-flex">
+                    <div class="face_identification_items">
+                        <div class="icon"><img src="<?=__IMG_DIR__?>/icon_s_08.png" alt=""></div>
+                        <h4>호텔/모텔</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="id_ocr white wow fadeInUpBig">
+        <div class="container">
+            <div class="row">
+                <div class="col-8 offset-2 col-sm-6 offset-sm-3 col-md-6 offset-md-3 col-lg-4 offset-lg-0 col-xl-4 offset-xl-1 order-lg-2 d-flex align-self-center wow fadeIn">
+                    <div class="circle_image_wrapper">
+                        <div class="circle">
+                            <div class="image_wrapper"><img src="<?=__IMG_DIR__?>/mobile_pic.png" alt=""></div>
+                        </div>
+                        <div class="dashed_circle">
+                            <span><img src="<?=__IMG_DIR__?>/circle_icon_01.png" alt=""></span>
+                            <span><img src="<?=__IMG_DIR__?>/circle_icon_03.png" alt=""></span>
+                            <span><img src="<?=__IMG_DIR__?>/circle_icon_02.png" alt=""></span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div id="main-blue-bg" class="col-lg-5 offset-lg-0 col-xl-5 offset-xl-0 d-flex align-self-center wow fadeInLeftBig text-center text-lg-left">
+                    <div class="w-100">
+                        <div class="section_heading">
+                            <h3 id="main-subheader-white">신분증 OCR + 진위확인</h3>
+                            <h4>비대면 본인인증</h4>
+                        </div>
+                        <p>
+                            신분증에 정확한 문자 인식부터<br/> 데이터 추출과 분류까지!
+                        </p>
+                        <p id="descript-blue-bg">
+                            딥러닝 기반의 OCR기술 및 빠른 진위확인으로<br class="on_mobile"/>
+                            금융실명법 비대면 인증 기준에 적합한<br class="on_mobile"/>
+                            보안 인증 솔루션입니다.
+                        </p>
+                        <a href="javascript:void(0);" class="bttn outline round transparent mt-2 mt-xl-4">체험하기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="account_authentication">
+        <div class="container">
+            <div class="row wow fadeInUpBig">
+                <div class="col-10 offset-2 col-sm-6 offset-sm-3 col-md-8 offset-md-3 col-lg-5 offset-lg-1 col-xl-6 offset-xl-0 d-flex align-self-center">
+                    <div class="mobile3d">
+                        <div class="image_wrapper mobile_3d">
+                            <img src="<?=__IMG_DIR__?>/mobile_3d.png" alt="">
+
+                            <div class="image_wrapper won">
+                                <img src="<?=__IMG_DIR__?>/won.png" alt="">
+                            </div>
+                             <div class="image_wrapper inj">
+                                <img src="<?=__IMG_DIR__?>/inj.png" alt="">
+                            </div>
+                            <div class="image_wrapper plug_in">
+                                <img src="<?=__IMG_DIR__?>/plug_in.png" alt="">
+                            </div>
+                            <div class="image_wrapper pw">
+                                <img src="<?=__IMG_DIR__?>/pw.png" alt="">
+                            </div>
+                            <div class="image_wrapper api">
+                                <img src="<?=__IMG_DIR__?>/api.png" alt="">
+                            </div>
+                            <div class="image_wrapper complete">
+                                <img src="<?=__IMG_DIR__?>/complete.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-0 col-xl-5 offset-xl-0 d-flex align-self-center wow fadeInLeftBig text-center text-lg-left">
+                    <div class="w-100">
+                        <div class="section_heading">
+                            <h3 id="main-subheader-black">1원 계좌 인증</h3>
+                        </div>
+                        <p>
+                            은행, 증권사, 보험사, 핀테크, P2P 금융<br class="on_mobile"/>
+                            서비스에서<br class="not_mobile"/> 비대면 본인인증 필수 수단으로<br class="on_mobile"/>
+                            사용되는<br class="not_mobile"/> 1원 계좌인증입니다.
+                        </p>
+                        <p>
+                            1원과 함께 인증 코드를 전송하여<br/>
+                            인증을 하는 솔루션입니다.
+                        </p>
+                        <a href="javascript:void(0);" class="bttn round mt-5">자세히보기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="Facial_authentication">
+        <div class="container wow fadeInUpBig">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-0 d-flex align-self-center order-lg-2 wow fadeIn">
+                    <div class="image_wrapper imsi">
+                        <img src="<?=__IMG_DIR__?>/imsi.png" alt="">
+                        <div class="image_wrapper imsi_two">
+                            <img src="<?=__IMG_DIR__?>/imsi_01.png" alt="">
+                        </div>
+                        <div class="image_wrapper imsi_three">
+                            <img src="<?=__IMG_DIR__?>/imsi_02.png" alt="">
+                        </div>
+                        <div class="image_wrapper imsi_four">
+                            <img src="<?=__IMG_DIR__?>/imsi_03.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex align-self-center wow fadeInRightBig text-lg-left text-center">
+                    <div class="w-100">
+                        <div class="section_heading">
+                            <h3 id="main-subheader-black">안면인증 솔루션</h3>
+                        </div>
+                            <p>
+                                비대면 신분증 OCR과 안면인증을 결합하면<br class="on_mobile"/>
+                                더욱 강력한 멀티팩터 보안 수단으로<br class="on_mobile"/>
+                                비대면 본인인증 방법으로 활용하실 수 있습니다.
+                            </p>
+                            <p>
+                                안면보안 인증은 비대면 시대에 다양한 부문에<br class="on_mobile"/>
+                                적용하여 온라인 비대면 서비스 보안을<br class="on_mobile"/>
+                                크게 향상시킬 수 있습니다.
+                            </p>
+                        <a href="javascript:void(0);" class="bttn round">체험하기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="id_verification wow fadeIn">
+        <div class="id_verification_bg white wow fadeInUpBig">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2 text-center">
+                        <div class="image_wrapper for_mobile">
+                            <img src="<?=__IMG_DIR__?>/realpass_img.png" alt="">
+                        </div>
+                        <div class="real_pass">
+                            <img src="<?=__IMG_DIR__?>/realpass.png" alt="">
+                        </div>
+                        <div class="section_heading">
+                            <h3 id="main-subheader-white">리얼패스 신분증 인증</h3>
+                            <p class="pt-3">신분증 촬영과 얼굴인식만으로<br/>비대면 본인인증 끝!</p>
+                        </div>
+                        <div class="image_wrapper">
+                            <img src="<?=__IMG_DIR__?>/realpass_img.png" alt="">
+                        </div>
+                        <div class="w-100 pt-0 pt-md-5">
+                            <a href="javascript:void(0);" class="bttn round outline transparent">체험하기 ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="client_partner">
+        <div class="container">
+            <div class="section_heading w-100 text-center wow fadeInUp">
+                <h3 id="main-subheader-black">Client & Partner</h3>
+            </div>
+            <div class="clients wow fadeInUp">
+                <div class="client_partener wow fadeInUp"><img src="<?=__IMG_DIR__?>/client_01.jpg" alt=""></div>
+                <div class="client_partener wow fadeInDown"><img src="<?=__IMG_DIR__?>/client_02.jpg" alt=""></div>
+                <div class="client_partener wow fadeInUp"><img src="<?=__IMG_DIR__?>/client_03.jpg" alt=""></div>
+                <div class="client_partener wow fadeInDown"><img src="<?=__IMG_DIR__?>/client_04.jpg" alt=""></div>
+                <div class="client_partener wow fadeInUp"><img src="<?=__IMG_DIR__?>/client_05.jpg" alt=""></div>
+                <div class="client_partener wow fadeInDown"><img src="<?=__IMG_DIR__?>/client_06.jpg" alt=""></div>
+                <div class="client_partener wow fadeInUp"><img src="<?=__IMG_DIR__?>/client_07.jpg" alt=""></div>
+                <div class="client_partener wow fadeInDown"><img src="<?=__IMG_DIR__?>/client_08.jpg" alt=""></div>
+                <div class="client_partener wow fadeInUp"><img src="<?=__IMG_DIR__?>/client_09.png" alt=""></div>
+                <div class="client_partener wow fadeInDown"><img src="<?=__IMG_DIR__?>/client_10.png" alt=""></div>
+            </div>
+            <div class="partners wow fadeInUp">
+                <div class="client_partener wow fadeInDown"><img src="<?=__IMG_DIR__?>/partners_extra1.png" alt=""></div>
+                <div class="client_partener wow fadeInUp"><img src="<?=__IMG_DIR__?>/partners_extra2.png" alt=""></div>
+                <div class="client_partener wow fadeInDown"><img src="<?=__IMG_DIR__?>/partners_extra3.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main_slide">
+        <div class="container wow fadeInUp">
+            <div class="owl-carousel main_slider">
+                <div class="slider_item">
+                    <img src="<?=__IMG_DIR__?>/sl_01.png" alt="">
+                    <img src="<?=__IMG_DIR__?>/slide_01_m.png" alt="">
+                    <div class="slide_sec">
+                        <div class="row">
+                            <div class="col-lg-6 white">
+                                <div class="section_heading">
+                                    <h3>더 나은<br/>비대면 본인인증 솔루션,<br/>유스비가<br/>만들어갑니다</h3>
+                                </div>
+                                <div class="w-100"><a href="javascript:void(0);" class="bttn round outline transparent">회사소개</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider_item">
+                    <img src="<?=__IMG_DIR__?>/sl_02.png" alt="">
+                    <img src="<?=__IMG_DIR__?>/slide_02_m.png" alt="">
+                    <div class="slide_sec">
+                        <div class="row">
+                            <div class="w-100 white text-center">
+                                <a href="javascript:void(0);" class="bttn round outlinedark">자세히 보기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="always_open wow fadeInUp">
+        <div class="container py-5">
+            <div class="section_heading w-100 text-center">
+                <h4 id="greeting-form">유스비는 항상 열려있습니다</h4>
+            </div>
+            <div class="row">
+                <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 px-xl-5">
+                    <div class="form_wrapper">
+                        <form id="home-form" method="post">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <h5>몇 가지 정보를 알려주시면,<br/>친절하고 신속하게 회신드립니다</h5>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="namebox">이름</label>
+                                    <span>
+                                        <input type="text" id="namebox" name="namebox" value="" placeholder="이름을 알려주세요">
+                                    </span>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="companybox">회사명 (선택)</label>
+                                    <span>
+                                        <input type="text" id="companybox" name="companybox" value="" placeholder="회사명를 알려주세요">
+                                    </span>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="emailbox">이메일</label>
+                                    <span>
+                                        <input type="email" id="emailbox" name="emailbox" value="" placeholder="담당자 이메일 주소를 알려주세요">
+                                    </span>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="telbox">연락처</label>
+                                    <span>
+                                        <input type="tel" id="telbox" name="telbox" value="" placeholder="담당자 전화번호를 알려주세요"f>
+                                    </span>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="requestbox">문의사항</label>
+                                    <span>
+                                        <textarea name="requestbox" id="requestbox" rows="8" cols="65" value="" placeholder="문의하시는 내용을 작성해주세요"></textarea>
+                                    </span>
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <input type="submit" id="home-inquire" value="보내기">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="<?=__JS_DIR__?>/inquiry.js?v=<?=$now?>"></script>
+<script>
+    const homeForm = document.getElementById('home-form');
+    function clickServiceBtn() {
+        homeForm.scrollIntoView(true, {block: "start"});
+        alert("해당 양식을 작성하시면 이메일로 서비스 소개서를 보내드립니다.");
+    }
+</script>
+<?php
+include './app/shared/footer.html';
+?>

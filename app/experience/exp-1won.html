@@ -1,0 +1,183 @@
+<?php
+include './app/shared/not-home-header.html';
+?>
+
+<section class="banner inner_banner solution_idcard_ocr">
+  <div class="banner_image">
+    <img src="<?=__IMG_DIR__?>/sub_bn_06.png" alt="" />
+    <img src="<?=__IMG_DIR__?>/test-mobile.png" alt="" />
+  </div>
+  <div class="container py-lg-2">
+    <div class="row">
+      <div class="col-lg-7 col-xl-5 text-center text-lg-left">
+        <div class="banner_content wow fadeInDown">
+          <h1>
+            유스비의 기술을<br />
+            체험해보세요
+          </h1>
+          <div class="w-100"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="exp_gray_bg text-center">
+  <div class="container">
+    <div class="exp-menu">
+      <a href="/experience/ocr" class="exp-submenu" id="exp-ocr-tab"
+        >신분증OCR+진위여부</a
+      >
+      <a href="/experience/ocrdoc" class="exp-submenu" id="exp-ocrdoc-tab"
+        >문서OCR</a
+      >
+      <a href="/experience/1won" class="exp-submenu blue-bg" id="exp-1won-tab"
+        >1원계좌인증</a
+      >
+      <a href="/experience/face" class="exp-submenu" id="exp-face-tab"
+        >안면인식</a
+      >
+      <a href="/experience/realpass" class="exp-submenu" id="exp-realpass-tab"
+        >리얼패스</a
+      >
+    </div>
+    <div class="exp-content-view">
+      <!-- STEP1: 인증코드방식 선택 (숫자, 알파벳, 한글) -->
+      <div class="content__1won" id="step1">
+        <div class="page-center">
+          <a class="page page-on"></a>
+          <a class="page"></a>
+          <a class="page"></a>
+          <a class="page"></a>
+        </div>
+        <div class="title-1won">본인계좌 인증하기</div>
+        <div class="not_mobile descript-1won">
+          인증코드방식 및 계좌번호 선택 후 다음버튼을 눌러주세요.
+        </div>
+        <div class="on_mobile descript-1won">
+          본인의 계좌번호를 선택 후 다음버튼을 눌러주세요.
+        </div>
+        <div class="inner__container">
+          <title class="type-1won">인증코드방식</title>
+          <div class="check__wrapper">
+            <div class="checks">
+              <input
+                type="radio"
+                id="type1"
+                onclick="selectType(this);"
+                name="radio"
+                value="number"
+                checked="checked"
+              />
+              <label for="type1">숫자</label>
+            </div>
+            <div class="checks">
+              <input
+                type="radio"
+                id="type2"
+                onclick="selectType(this);"
+                name="radio"
+                value="english"
+              />
+              <label for="type2">알파벳</label>
+            </div>
+            <div class="checks">
+              <input
+                type="radio"
+                id="type3"
+                onclick="selectType(this);"
+                name="radio"
+                value="korean"
+              />
+              <label for="type3">한글</label>
+            </div>
+          </div>
+          <select id="account-number" class="account-number" onchange="selectAccount(this);">
+            <option value="0">계좌 번호 선택</option>
+            <option value="1">110-446-043000</option>
+            <option value="2">3333-09-4768000</option>
+            <option value="3">010-9384-1234</option>
+            <option value="4">241-910203-88999</option>
+            <option value="5">010-7558-1234</option>
+          </select>
+          <input type="text" id="bank-name" placeholder="은행명">
+          <input type="text" id="receiver-name" placeholder="수취인명">
+        </div>
+        <div class="btn__container">
+          <button class="btn btn1">다음</button>
+        </div>
+        <span>* 1원 인증 프로세스의 이해를 돕기위한 가상 시뮬레이션입니다. </span>
+      </div>
+      <!-- STEP2: 코드 확인 -->
+      <div class="content__1won d-none" id="step2">
+        <div class="page-center">
+          <a class="page"></a>
+          <a class="page page-on"></a>
+          <a class="page"></a>
+          <a class="page"></a>
+        </div>
+        <div class="title-1won">계좌로 입금된 코드 확인</div>
+        <div class="descript-1won">계좌에 입금된 입금자명을 확인하고 다음버튼을 눌러주세요.</div>
+        <div class="inner__container" id="img-box">
+          <img src="<?=__IMG_DIR__?>/code.png" alt="">
+          <h4 id="code-value">맑은하늘</h4>
+        </div>
+        <div class="btn__container">
+          <button class="btn btn2">다음</button>
+        </div>
+        <span>* 1원 인증 프로세스의 이해를 돕기위한 가상 시뮬레이션입니다. </span>
+      </div>
+      <!-- STEP3:  코드 입력 (숫자는 박스 4개, 한글+영어는 긴 박스)-->
+      <div class="content__1won d-none" id="step3">
+        <div class="page-center">
+          <a class="page"></a>
+          <a class="page"></a>
+          <a class="page page-on"></a>
+          <a class="page"></a>
+        </div>
+        <div class="title-1won">입금자명  코드 입력</div>
+        <div class="descript-1won">계좌에 입력된 입금자명을 확인 후 입력해주세요.</div>
+        <div class="inner__container">
+          <form class="codebox">
+            <input maxlength="1" class="code one" name="code1" type="text" autocomplete="off" autofocus>
+            <input maxlength="1" class="code two" name="code2" type="text" autocomplete="off">
+            <input maxlength="1" class="code three" name="code3" type="text" autocomplete="off">
+            <input maxlength="1" class="code four" name="code4" type="text" autocomplete="off">
+            <input maxlength="4" class="code kor" name="code-kor" type="text" autocomplete="off" spellcheck="false" autofocus>
+          </form>
+          <span class="error-message">잘못된 코드를 입력하셨습니다</span>
+        </div>
+        <div class="btn__container">
+          <button class="btn prev">이전</button>
+          <button class="btn btn3">다음</button>
+        </div>
+        <span>* 1원 인증 프로세스의 이해를 돕기위한 가상 시뮬레이션입니다. </span>
+      </div>
+      <!-- STEP4: 인증 결과 (SUCCESS or FAIL) -->
+      <div class="content__1won d-none" id="step4">
+        <div class="page-center">
+          <a class="page"></a>
+          <a class="page"></a>
+          <a class="page"></a>
+          <a class="page page-on"></a>
+        </div>
+        <div class="title-1won">인증확인</div>
+        <div class="descript-1won"></div>
+        <div class="inner__container">
+          <img class="code-result success"  src="<?=__IMG_DIR__?>/face.svg">
+          <img class="code-result fail"  src="<?=__IMG_DIR__?>/redface.svg">
+          <p class="result-message">1원 인증에 성공했습니다</p>
+        </div>
+        <div class="btn__container">
+          <button class="btn btn4">다시하기</button>
+        </div>
+        <span>* 1원 인증 프로세스의 이해를 돕기위한 가상 시뮬레이션입니다. </span>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+<script src="<?=__JS_DIR__?>/exp-1won.js?v=<?=$now?>"></script>
+<?php
+include './app/shared/footer.html';
+?>
